@@ -1,0 +1,288 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.navbar{
+    display: flex;
+    align-items: center;
+    margin-top: 50px;
+}
+.hamburger{
+    display: none;
+}
+.nav ul{
+    display: flex;
+    align-items: center;
+}
+.nav ul li{
+    padding: 0px 10px;
+    text-transform: uppercase;
+}
+.btn{
+    padding: 5px 30px;
+    box-shadow: 2px 2px 3px hsl(0, 0%, 83%);
+}
+.navbar-nav ul li{
+    margin-right: 15px;
+}
+.navbar-nav ul li a{
+    color: black;
+}
+.navbar-nav .nav li .btn{
+    background-color: hsl(0, 94%, 66%);
+    border: none;
+}
+.navbar-nav .nav li .btn a{
+    color: #ffffff;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+.overlay{
+    display: none;
+}
+.about{
+    margin-top: 100px;
+}
+.intro-text{
+    order: 1;
+}
+.intro-img{
+    order: 2;
+}
+.chrome-btn{
+    padding: 10px 30px;
+}
+.chrome-btn a{
+    color: #ffffff;
+    text-transform: none;
+    text-decoration: none;
+}
+.firefox-btn{
+    padding: 10px 30px;
+}
+.firefox-btn a{
+    color: black;
+    text-decoration: none;
+    text-transform: none;
+}
+.features ul li{
+    border-bottom: 2px solid hsl(229, 8%, 60%);
+}
+.features ul li:hover{
+    border-bottom: 4px solid hsl(0, 94%, 66%);
+}
+.features ul li .nav-link{
+    padding: 25px 50px;
+}
+.features-btn{
+    padding: 10px 20px;
+}
+.features-btn a{
+    color: #ffffff;
+    text-transform: none;
+}
+.extension-header{
+    margin-top: 250px;
+}
+.extension-header p{
+    margin: 0px 300px;
+}
+.extension-card{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 40px;
+}
+.extension-card .card{
+    border-radius: 5px;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+}.card-2{
+    margin-top: 90px;
+    margin-left: 15px;
+}
+.card-3{
+    margin-top: 150px;
+    margin-left: 15px;
+}
+.faq-header{
+    margin-top: 100px;
+}
+.faq-header p{
+    margin: 20px 300px;
+}
+.accordion-q{
+    padding-bottom: 10px;
+    border-bottom: 1px solid hsl(229, 8%, 60%);
+    position: relative;
+}
+.accordion-q span{
+    position: absolute;
+    right: 0;
+}
+.faq-btn{
+    margin: auto;
+}
+.faq-btn a{
+    color: #ffffff;
+}
+.footer{
+    margin-top: 50px;
+}
+.footer-one{
+    background-color: hsl(231, 69%, 60%);
+    padding: 100px 0px;
+}
+.footer-one p{
+    color: #ffffff;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+.footer-one h2{
+    color: #ffffff;
+    margin: 50px 0px;
+}
+.contact-us input{
+    padding: 10px 50px 10px 20px;
+    border-radius: 5px;
+    border: none;
+}
+.contact-us img{
+    position: relative;
+    right: 35px;
+}
+.contact-us .btn{
+    background-color: hsl(0, 94%, 66%);
+    margin-left: 10px;
+    padding: 10px;
+    border: none;
+    box-shadow: none;
+}
+.contact-us .btn a{
+    text-decoration: none;
+    color: #ffffff;
+}
+.footer-two{
+    background-color: hsl(229, 31%, 21%);
+    padding: 10px 100px;
+}
+.footer-two .navbar{
+    margin-top: 10px;
+}
+.footer-two .navbar .navbar-brand .nav li a{
+    color: #ffffff;
+}
+@media (max-width: 767.98px){
+    .top-nav{
+        display: none;
+    }
+    .hamburger{
+        display: block;
+    }
+    .overlay {
+        display: block;
+        height: 0%;
+        width: 100%;
+        position: fixed;
+        z-index: 1;
+        left: 0;
+        top: 0;
+        background: hsl(229, 31%, 21%);
+        overflow-y: hidden;
+        transition: 0.5s;
+        overflow-y: auto;
+    }
+    .overlay-content {
+        position: relative;
+        top: 25%;
+        width: 100%;
+        text-align: center;
+        margin-top: 30px;
+    }
+    .overlay a {
+        margin: 0 50px;
+        padding: 20px;
+        text-decoration: none;
+        color: #ffffff;
+        display: block;
+        transition: 0.3s;
+        font-size: 20px;
+        display: block;
+        text-transform: uppercase;
+        border-bottom: 1px solid #818181;;
+    }
+    .overlay a button{
+        padding: 15px 50px;
+        width: 100%;
+        background: none;
+        color: #ffffff;
+        border: 3px solid #ffffff;
+        border-radius: 5px;
+    }
+    .overlay .navimg{
+        position: absolute;
+        top: 45px;
+        left: 35px;
+    }
+    .overlay .closebtn {
+        position: absolute;
+        font-size: 40px;
+        top: 15px;
+        right: 10px;
+        border: none;
+    }
+    .overlay ul{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-top: 70px;
+        position: absolute;
+        left: 180px;
+        bottom: 30px;
+    }
+    .overlay ul li{
+        padding: 20px;
+    }
+    .about{
+        display: flex;
+        text-align: center;
+    }
+    .intro-text{
+        order: 2;
+    }
+    .intro-img{
+        order: 1;
+    }
+    .features-text{
+        display: block;
+        text-align: center;
+    }
+    .extension-header p{
+        margin: auto;
+    }
+    .extension-card{
+        flex-direction: column;
+    }
+    .card-2{
+        margin-top: 40px;
+        margin-left: 0px;
+    }
+    .card-3{
+        margin-top: 40px;
+        margin-left: 0px;
+    }
+    .faq-header p{
+        margin: auto;
+    }
+    .footer-one h2{
+        padding: 30px;
+        text-align: center;
+    }
+    .footer-two-nav{
+        display: block;
+    }
+    .footer-two-ul{
+        display: block;
+        margin: auto;
+    }
+}
